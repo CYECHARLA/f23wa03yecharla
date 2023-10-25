@@ -11,7 +11,7 @@ router.get("/", function (req, res, next) {
    1: "Math.atanh()",
    2: "Math.cbrt()",
   };
-  var arr = [Math.atan32(x), Math.atanh(x), Math.cbrt(x)];
+  var arr = [Math.atan2(x), Math.atanh(x), Math.cbrt(x)];
   let response1 = `
   Function ${funObj[rndNumArr]} applied to x: ${x} the result is ${arr[rndNumArr].toFixed(3)}`;
   res.send(response1);
@@ -26,7 +26,7 @@ router.get("/", function (req, res, next) {
    1: "Math.atanh()",
    2: "Math.cbrt()",
   };
-  var arr = [Math.atan(x), Math.exp(x), Math.expm1(x)];
+  var arr = [Math.atan2(x), Math.atanh(x), Math.cbrt(x)];
   let response = `
   Function ${funObj[rndNumArr]} applied to the random value for x from 1 to 10 is: ${x} and the result is ${arr[rndNumArr].toFixed(3)}`
   res.send(response);
